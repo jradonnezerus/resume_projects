@@ -1,0 +1,7 @@
+This project was on how to use data analytics to solve the issue the HR department usually faces - how to employ the right people? HR departments usually face thousands of resumes everyday. Our solution was to predict who were the top several candidates based on several models.
+The datasets used included the IBM HR dataset, and several fictitious resumes that we created / found. We also utilised several psychometric traits from the OCEAN model as part of our prediction process.
+
+1) We used resume parsing (i.e. text analytics) to score resumes based on certain keywords. This will reduce drastically the number of resumes the HR department has to scan through.
+2) We predicted how long someone will stay with the company.
+3) We predicted how happy someone will be in the company, on the assumption that happier employees are more productive and have a positive impact on the company culture.
+4) We predicted how well someone would perform in the company.
