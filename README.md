@@ -7,4 +7,6 @@ Welcome to my repository of several projects that I have done.
 
 3) AI Predict STI uses many models, especially in the machine learning and deep learning fields, to predict if the Straits Times Index would increase or decrease the next day.
 
+4) Instagram Followers Project uses text analytics (regular expressions, string splicing, lists) with HTML to quickly extract usernames and see which followers have since unfollowed you etc.
+
 Hope you enjoy your time here!
