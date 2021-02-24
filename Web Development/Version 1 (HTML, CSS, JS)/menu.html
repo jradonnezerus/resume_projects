@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meat Bomb</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="styles2.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="wmp assignment 1.js"></script>
+</head>
+<body>
+    <header>
+        <img id="logo" src="meatbomb logo official.png" alt="Meat Bomb Logo">
+        <!-- https://www.freelogodesign.org/preview?lang=en&autodownload=true&logo=9cebf3b4-b47c-4a38-87b5-f021d8a71a59 -->
+        <h1>MEAT BOMB</h1>
+        <h2>UNAPOLOGETICALLY MEAT</h2>
+        <hr>
+        <nav>
+            <a href="#" id="navicon"><img src="navicon.png"/></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- the below also uses a grid layout to lay out everything -->
+    <!-- each picture and its name and price are boxed in via the figure and figcaption element tags -->
+    <div id="maincontent">
+        <p>Busy at home or in the office? We deliver too!<br>
+        Fill in the form as per below:</p>
+        <div id="allfoods">
+            <div class="food">
+                <figure>
+                    <img src="saumon-moelleux-et-croustillant.jpg" alt="Salmon">
+                    <!-- https://spicetrekkers.com/upload/recettes/saumon-moelleux-et-croustillant.jpg -->
+                    <figcaption>Alaskan Salmon<br>$7</figcaption>
+                </figure>
+                <input class="individual_food_spinner" type="number" value="0" min="0"/> 
+            </div>
+            <div class="food">
+                <figure>
+                    <img src="medium-rare-steak-shutterstock_706040446.jpg" alt="Beef Steak">
+                    <!-- https://www.tasteofhome.com/wp-content/uploads/2019/01/medium-rare-steak-shutterstock_706040446.jpg -->
+                    <figcaption>Beef Steak<br>$12</figcaption>
+                </figure>
+                <input class="individual_food_spinner" type="number" value="0" min="0"/> 
+            </div>
+            <div class="food">
+                <figure>
+                    <img src="buffalowings.jpg" alt="Wings">
+                    <!-- https://i.pinimg.com/600x315/6e/03/c5/6e03c502dbbef5b7228dcd49289924fb.jpg -->
+                    <figcaption>Buffalo Wings (6 pcs)<br>$6</figcaption>
+                </figure>
+                <input class="individual_food_spinner" type="number" value="0" min="0"/> 
+            </div>
+            <div class="food">
+                <figure>
+                    <img src="juicyburger.jpg" alt="Burger">
+                    <!-- https://i.pinimg.com/originals/a5/cc/44/a5cc44417ef80282a4c68bc6befd5126.jpg -->
+                    <figcaption>Cheese Burger<br>$10</figcaption>
+                </figure>
+                <input class="individual_food_spinner" type="number" value="0" min="0"/> 
+            </div>
+            <div class="food">
+                <figure>
+                    <img src="Outback-Jacks-Bar-Grill-Ribs-Combo.jpg" alt="Ribs">
+                    <!-- google images -->
+                    <figcaption>Pork Ribs<br>$12</figcaption>
+                </figure>
+                <input class="individual_food_spinner" type="number" value="0" min="0"/> 
+            </div>
+            <div class="food">
+                <figure>
+                    <img src="st_20160408_rtpicks08_2198321.jpg" alt="Platter">
+                    <!-- https://www.straitstimes.com/sites/default/files/styles/article_pictrure_780x520_/public/articles/2016/04/08/st_20160408_rtpicks08_2198321.jpg?itok=wVTYovgH&timestamp=1460051835 -->
+                    <figcaption>Meat Platter<br>$18</figcaption>
+                </figure>
+                <input class="individual_food_spinner" type="number" value="0" min="0"/> 
+            </div>
+        </div>
+
+        <!-- this is where we do the html for the form elements -->
+        <!-- we will experiment with various types of form control elements -->
+
+        <div id="purchaseform">
+            <p>DELIVERY PURCHASE FORM</p>
+            <form name='ordering' method="post">
+                <!-- action="https://www.example.com" -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="formelement">
+                        <label for="fullname">Full Name</label>
+                        <label class="label_for_input"><input name="fullname" id="fullname" type="text"/></label>
+                        <div id="fullname_errormsg" class="error_hide">(Please ensure field is filled up accurately.)</div>
+                    </div>
+                    <div class="formelement">
+                        <label for="mobile">Phone / Mobile Number</label>
+                        <label class="label_for_input"><input name="mobile" id="mobile" type="text" placeholder="xxxxxxxx"/></label>
+                        <div id="mobile_errormsg" class="error_hide">(Please ensure field is filled up accurately.)</div>
+                    </div>
+                    <div class="formelement">
+                        <label for="address">Address</label>
+                        <label class="label_for_input"><input name="address" id="address" type="text"/></label>
+                        <div id="address_errormsg" class="error_hide">(Please ensure field is filled up accurately.)</div>
+                    </div>
+                    <div class="formelement">
+                        <label for="postal">Postal Code</label>
+                        <label class="label_for_input"><input name="postal" id="postal" type="text" placeholder="123456"/></label>
+                        <div id="postal_errormsg" class="error_hide">(Please ensure field is filled up accurately.)</div>
+                    </div>
+                    <div class="formelement">
+                        <label for="deliverdate">Delivery Date</label>
+                        <label class="label_for_input"><input name="deliverdate" id="deliverdate" type="date"/></label>
+                        <div id="deliverdate_errormsg" class="error_hide">(Please ensure a future date is chosen.)</div>
+                    </div>
+                    <div class="formelement">
+                        <label for="delivertime">Delivery Timeslot</label>
+                        <label class="label_for_input">
+                            <select name="delivertime" id="delivertime">
+                                <option value="10AM - 12PM">10AM - 12PM</option>
+                                <option value="12PM - 02PM">12PM - 02PM</option>
+                                <option value="02PM - 04PM">02PM - 04PM</option>
+                                <option value="04PM - 06PM">04PM - 06PM</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="formelement">
+                        <label for="athome">Will You Be At Home?</label>
+                        <label><input name="athome" id="athome" type="checkbox"/> Yes</label>
+                    </div>
+                    <div class="formelement paymentelement">
+                        <img src="payment.png" alt="Payment Icon">
+                        <!-- flaticon.com -->
+                        <label for="payment">Payment Method</label>
+                        <label><input type="radio" name="payment" value="Cash on Delivery">Cash on Delivery</label>
+                        <label><input type="radio" name="payment" value="Credit Card">Credit Card</label>
+                        <div id="payment_errormsg" class="error_hide">(You must choose one.)</div>
+                    </div>
+                    <div class="formelement">
+                        <label for="comments">Additional Comments</label>
+                        <label><textarea name="comments" id="comments" cols="80" rows="10"></textarea></label>
+                    </div>
+                    <div id="submitdiv">
+                        <input id="submit" type="submit"/>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <footer>
+        Meat Bomb Pte Ltd &bull; 96 Somerset Road #01-06 S(238163) &bull; +65 6245 7890 &bull; enquiries@meatbomb.com
+    </footer>
+</body>
+</html>

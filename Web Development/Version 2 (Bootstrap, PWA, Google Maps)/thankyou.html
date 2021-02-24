@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meat Bomb</title>
+    <link rel = "stylesheet" href = "./css/bootstrap.min.css" >
+    <script src = "./js/jquery-3.3.1.min.js" ></script>
+    <script src = "./js/popper.min.js" ></script>
+    <script src = "./js/bootstrap.min.js" ></script>
+    <script src = "./js/wmp_assignment_1.js" ></script>
+    <link rel = "stylesheet" href = "./css/thankyou.css" >
+    <link rel = "manifest" href = "./manifest.json" > <!-- for PWA -->
+    <link rel="apple-touch-icon" href="img/meatbomb_logo_official_192.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#5bc0de"> <!-- for PWA-->
+    <meta name="theme-color" content="#5bc0de"> <!-- for PWA -->
+</head>
+<body style="background-image: url('img/pexels-pixabay-326311.jpg')" class="content">
+    
+    <nav class = "navbar bg-danger navbar-light font-weight-bold navbar-expand-sm sticky-top "> <!-- navbar-expand-sm = if smartphone and above, show everything -->
+        <a class = "navbar-brand d-none d-sm-inline-block" href = "index.html" > <!-- navbar-brand to put the logo-->
+            <img id = "logo" src = "img/meatbomb_logo_official.png" alt="meatbomb_logo">
+            <!-- https://www.freelogodesign.org/preview?lang=en&autodownload=true&logo=9cebf3b4-b47c-4a38-87b5-f021d8a71a59 -->
+        </a>
+        
+        <!-- when the page is collapsed, this button thing is the hamburger icon! done because of class = "navbar-toggler", data-toggle = "collapse", and data-target = "#thetarget" -->
+        <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#toggleNavbar" aria-controls = "toggleNavbar" aria-expanded = "false" aria-label = "toggleNavbar" >
+            <span class = "navbar-toggler-icon" ></span>
+        </button>
+
+        <div class = "collapse navbar-collapse " id = "toggleNavbar" >
+            <ul class = "navbar-nav mr-sm-auto nav-fill w-100" >
+                <li class = "nav-item " >
+                    <a class = "nav-link " href = "index.html" >Home</a>
+                </li>
+                <li class = "nav-item" >
+                    <a class = "nav-link" href = "menu.html" >Menu</a>
+                </li>
+                <li class = "nav-item dropdown" >
+                    <a class = "nav-link dropdown-toggle" data-toggle = "dropdown" id = "serviceDropDown" aria-haspopup = "true" aria-expanded = "false" href = "#" >FAQ</a>
+                    <div class = "dropdown-menu w-100" aria-labelledby = "serviceDropDown" >
+                        <a class = "dropdown-item" href = "#" >Our Mission</a>
+                        <a class = "dropdown-item" href = "#" >Our Foods</a>
+                        <a class = "dropdown-item" href = "#" >Deliveries</a>
+                    </div>
+                </li>
+                <li class = "nav-item" >
+                    <a class = "nav-link" href = "contact.html" >Contact</a>
+                </li>
+                <li class = "nav-item" >
+                    <a class = "nav-link" href = "listingsWMDPWA.html" >Listings (WMP PWA)</a>
+                </li>
+            </ul>
+        </div>
+
+        <form class = "form-inline" > <!-- by default it appears vertically, so inline makes it horizontally -->
+            <div class = "input-group" role = "group" >
+                <input type = "text" class = "form-control" placeholder = "Search" >
+                <button class = "btn btn-outline-light" type = "submit" >Go</button>
+            </div>
+        </form>
+
+    </nav>
+
+    <div class = "content h-100">
+        <p>&nbsp;</p>
+        <div id="message" class="p-5 col-8 offset-2 bg-light text-center">
+            <p class="display-4">Transaction successful! <br><br> Thank you for your purchase!</p>
+        </div>
+        <p>&nbsp;</p>
+    </div>
+
+    <footer class = "footer fixed-bottom bg-dark" >
+        <div class = "container text-center mt-3 mb-3" >
+          <span class = "text-white" > Meat Bomb Pte Ltd &bull; 96 Somerset Road #01-06 S(238163) &bull; +65 6245 7890 &bull; enquiries@meatbomb.com</span>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+    "name": "Meat Bomb PWA",
+    "short_name": "MBPWA",
+    "theme_color": "#5bc0de",
+    "background_color": "#5bc0de",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "img/meatbomb_logo_official.png",
+        "sizes": "200x200",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "img/meatbomb_logo_official_192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "img/meatbomb_logo_official_512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "splash_pages": null,
+    "fcm_sender_id": "422680199225"
+  }

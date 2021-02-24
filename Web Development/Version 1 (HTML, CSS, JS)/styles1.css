@@ -1,0 +1,183 @@
+/* serves as the base css for all the pages */
+
+html {
+    background: #A67549; 
+    font-family: sans-serif; 
+    background-image: url("pexels-pixabay-326311.jpg");
+    background-repeat: round;
+}
+
+body {
+    background-color: #A67549; 
+    margin: 0px auto;
+    min-width: 480px;
+    max-width: 1200px;   
+    width: 100%;
+}
+
+/* for the header portion, we want to use absolute positioning to position the titles */
+
+header {
+    background-color: #694A2E;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+img#logo {
+    float: left;
+    width: 16vw;
+}
+
+h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 200%;
+    color: white;
+    position: absolute;
+    top: 25%;
+    right: 20%;
+    font-size: 7vmin;
+}
+
+h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5em;
+    color: red;
+    font-style: italic;
+    position: absolute;
+    top: 55%;
+    right: 12%;
+    font-size: 5vmin;
+}
+
+hr {
+    border: 2px solid black;
+}
+
+hr, nav {
+    clear: both;
+}
+
+nav li {
+    background-color:#694A2E;
+    float: left;
+    width: 25%;
+    text-align: center;
+    line-height: 150%;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+nav a:link, nav a:visited {
+   color: rgb(247, 167, 20);
+}
+
+nav a:hover, nav a:active {
+   background-color: #e63333a9;
+}
+
+/* this portion is where we work with the grid layout */
+
+div.newrow {
+    clear: both;
+    display: flex;
+}
+
+div.col-2-3 {
+    width: 66%;
+    float: left;
+}
+
+div.col-1-2 {
+    width: 48%;
+    float: left;
+    margin: 1%;
+}
+
+div.col-1-1 {
+    width: 98%;
+    margin: 1%;
+}
+
+#pic1, #pic2, #pic3 {
+    width: 100%;
+}
+
+div.col-1-3 {
+    width: 32%;
+    margin: 0.5%;
+    background-color: #5E0000;
+    color: white;
+    float: left;
+    font-size: 1.75vmax;
+    padding: 1.5%;
+    line-height: 120%;
+}
+
+div.col-1-3 p {
+    width: 100%;
+}
+
+footer {
+    clear: both;
+    font-size: 100%;
+    background-color: black;
+    color: #d48741;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5vw;
+    line-height: 3vw;
+}
+
+/* controls for screen size, and navicon */
+
+    /* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+@media only screen and (max-width: 640px) {
+
+    a#navicon {
+       display: block;
+    }
+    
+    header nav ul {
+       display: none;
+    }
+    
+    header nav ul li {
+       font-size: 1em;
+       line-height: 1.3em;
+       height: 1.3em;
+    }
+    
+    a#navicon:hover+ul, header nav ul:hover {
+       display: block;
+    }
+ }
+ 
+ /* =============================================
+    Tablet and Desktop Styles: greater than 640px
+    =============================================
+ */
+ @media only screen and (min-width: 641px) {
+    
+    header nav ul {
+       display: -webkit-flex;
+       display: flex;
+       -webkit-flex-flow: row nowrap;
+       flex-flow: row nowrap;
+       -webkit-justify-content: center;
+       justify-content: center;
+    }
+    
+    header nav ul li {
+       -webkit-flex: 0 1 auto;
+       flex: 0 1 auto;
+    }
+
+    a#navicon {
+        display: none;
+    }
+ }

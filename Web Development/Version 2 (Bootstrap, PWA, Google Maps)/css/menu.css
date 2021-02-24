@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+#logo {
+    width : 100px ;
+    height : 100px ;
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card, #purchaseform {
+    border-width: thick;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+p.display-1 {
+    border-bottom-width: thick;
+    border-bottom-style: solid;
+}
+
+#content {
+    background-color: rgba(255, 255, 255, .40);
+}
+
+.error_hide {
+    display: none;
+}
+
+.error_show {
+    color: gold;
+    font-style: italic;
+    display: inline-block;
+}
+
+@media screen and (max-width: 640px) {
+    p.bg-warning {
+        font-size: 300%;
+    }
+
+    legend.display-4 {
+        font-size: 200%;
+    }
+}
+
+div.paymentelement img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+#logo {
+    width : 100px ;
+    height : 100px ;
+}
+
+#contact {
+    margin-bottom: 57px;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.border-solid {
+    border-width: thick;
+    border-style: solid;
+}
+
+#map {
+    min-height: 600px;
+    height: 100%;
+}

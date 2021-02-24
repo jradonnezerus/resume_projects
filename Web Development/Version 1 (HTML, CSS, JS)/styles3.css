@@ -1,0 +1,33 @@
+div#contact {
+    text-align: center;
+    background-color: #5E0000;
+    width: 100%;
+}
+
+div#bulls {
+    display: flex;
+    justify-content: space-between;
+}
+
+img.bulls {
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+    flex: 0 1 auto;
+}
+
+img#locationmap {
+    height: auto;
+    max-width: 80%;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+p#address_text {
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 140%;
+    padding: 10px;
+    padding-bottom: 3%;
+    color: white;
+}

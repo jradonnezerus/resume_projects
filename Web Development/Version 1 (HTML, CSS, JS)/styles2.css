@@ -1,0 +1,131 @@
+/* general styling for the main content row */
+
+div#maincontent {
+    background-color: #5E0000;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
+
+div#maincontent > p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 100%;
+    font-size: 130%;
+}
+
+/* menu option styling */
+
+div#allfoods {
+    width: 100%;
+    background-color: #5E0000;
+    overflow: auto;
+    height: 500px;
+}
+
+div.food {
+    width: 46%;
+    margin: 2%;
+    float: left;
+}
+
+div.food img {
+    width: 100%;
+    min-height: 400px;
+    margin-bottom: 10px;
+}
+
+input.individual_food_spinner {
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* styling for the forms */
+
+div#purchaseform {
+    margin-top: 3px;
+    border-style: double;
+    border-color: white;
+    border-width: 10px;
+}
+
+div#purchaseform > p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    font-size: 200%;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form {
+    text-align: left;
+}
+
+div.formelement {
+    margin-left: 100px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+div.paymentelement {
+    margin-left: 10%;
+}
+
+div.paymentelement img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+div.paymentelement label {
+    width: 200px;
+}
+
+legend {
+    color: black;
+    background-color: rgb(240, 211, 211);
+    font-size: 20px;
+    font-weight: bolder;
+    width: 70%;
+}
+
+label {
+    display: inline-block;
+    width: 250px;
+}
+
+label.label_for_input {
+    width: 200px;
+}
+
+div#submitdiv {
+    text-align: center;
+    margin: 20px;
+}
+
+footer {
+    font-size: smaller;
+    font-family: Geneva, sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+/* For Web Form Validation */
+
+/* for all div error messsages, display as inline */
+
+.error_hide {
+    display: none;
+}
+
+.error_show {
+    color: gold;
+    font-style: italic;
+    display: inline-block;
+}

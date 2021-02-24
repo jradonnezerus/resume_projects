@@ -1,0 +1,55 @@
+{
+    "listing1": {
+        "id": 1,
+        "name": "Alaskan Salmon",
+        "imageurl": "img/saumon-moelleux-et-croustillant.jpg",
+        "price": 7,
+        "lat": 1.3640589389088327,
+        "lng": 103.82905180957026
+    },
+
+    "listing2": {
+        "id": 2,
+        "name": "Beef Steak",
+        "imageurl": "img/medium-rare-steak-shutterstock_706040446.jpg",
+        "price": 12,
+        "lat": 1.3193105076506748,
+        "lng": 103.92518218066449
+    },
+
+    "listing3": {
+        "id": 3,
+        "name": "Buffalo Wings",
+        "imageurl": "img/buffalowings.jpg",
+        "price": 6,
+        "lat": 1.2868748984019192,
+        "lng": 103.82785017993207
+    },
+
+    "listing4": {
+        "id": 4,
+        "name": "Cheese Burger",
+        "imageurl": "img/juicyburger.jpg",
+        "price": 10,
+        "lat": 1.3357855764484434,
+        "lng": 103.7442510893559
+    },
+
+    "listing5": {
+        "id": 5,
+        "name": "Pork Ribs",
+        "imageurl": "img/Outback-Jacks-Bar-Grill-Ribs-Combo.jpg",
+        "price": 12,
+        "lat": 1.4358348744968072,
+        "lng": 103.78630812670941
+    },
+
+    "listing6": {
+        "id": 6,
+        "name": "Meat Platter",
+        "imageurl":"img/st_20160408_rtpicks08_2198321.jpg",
+        "price": 18,
+        "lat": 1.4287989571048099,
+        "lng": 103.83523161914106
+    }
+}

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+#logo {
+    width : 100px ;
+    height : 100px ;
+}
+
+td img {
+    width: 150px;
+    vertical-align: auto;
+}
+
+table {
+    line-height: 8;
+}
