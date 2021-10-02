@@ -1,7 +1,7 @@
 # resume_projects
 Welcome to my repository of several projects that I have done.
 
-1) Created an online web Marketplace using ReactJS and NodeJS. See here: https://github.com/xuanyucodes/personal_dbs_seed.
+1) Created an online web Marketplace using ReactJS and NodeJS for a hackathon I participated in. See here: https://github.com/xuanyucodes/personal_dbs_seed.
 
 2) R Shiny UI Project shows a user interface that I had to self-learn and build from scratch using the RShiny package.
 
